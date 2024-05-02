@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>ActiVitae</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav__logo">
+      <a href="#"><img src="Images/logo.png" alt="logo"></a>
+    </div>
+    <ul class="nav__links">
+      <li class="link"><a href="index.html">Home</a></li>
+      <li class="link"><a href="program.html">Program</a></li>
+      <li class="link"><a href="service.html">Service</a></li>
+      <li class="link"><a href="about.html">About</a></li>
+      <li class="link"><a href="community.html">Community</a></li>
+    </ul>
+    <button class="btn">Join Now</button>
+  </nav>
+
+  <header class="section__container header__container">
+    <div class="header__content">
+      <span class="bg__blur"></span>
+      <span class="bg__blur header__blur"></span>
+      <h4>Embrace an ActiVitae Lifestyle</h4>
+      <h1><span>NOURISH</span> YOUR BODY</h1>
+      <p>
+        Welcome to ActiVitae, your gateway to a holistic lifestyle that harmonizes physical activity and intellectual
+        stimulation. Our mission is to inspire and empower individuals to unlock their full potential by engaging in
+        pursuits that invigorate both the body and the mind.
+      </p>
+      <button onclick="showJoinForm()" class="btn">Get Started</button>
+    </div>
+    <div class="header__image">
+      <img src="Images/header.png" alt="header">
+    </div>
+    <div id="joinForm" style="display: none;">
+      <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </header>
+
+
+  <section class="review">
+    <div class="section__container review__container">
+      <span><i class="ri-double-quotes-r"></i></span>
+      <div class="review__content">
+        <h4>MEMBER REVIEW</h4>
+        <p>
+          As a fitness and wellness influencer, I'm constantly on the lookout for communities that promote a holistic
+          approach to health and well-being. That's why I was thrilled to discover ActiVitae - a platform that truly
+          understands the importance of nurturing both the body and the mind.
+        </p>
+        <div class="review__rating">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-half-fill"></i></span>
+        </div>
+        <div class="review__footer">
+          <div class="review__member">
+            <img src="Images/member.jpg" alt="member">
+            <div class="review__member__details">
+              <h4>John Doe</h4>
+              <p>Social Media Influencer</p>
+            </div>
+          </div>
+          <div class="review__nav">
+            <span><i class="ri-arrow-left-line"></i></span>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section__container footer__container">
+    <span class="bg__blur"></span>
+    <span class="bg__blur footer__blur"></span>
+    <div class="footer__col">
+      <div class="footer__logo"><img src="Images/logo.png" alt="logo"></div>
+      <p>
+        Take the first step towards a healthier, stronger you with our
+        unbeatable pricing plans. Let's sweat, achieve, and conquer together!
+      </p>
+      <div class="footer__socials">
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>Company</h4>
+      <a href="#">Business</a>
+      <a href="#">Franchise</a>
+      <a href="#">Partnership</a>
+      <a href="#">Network</a>
+    </div>
+    <div class="footer__col">
+      <h4>About Us</h4>
+      <a href="#">Blogs</a>
+      <a href="#">Security</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Swags</a>
+    </div>
+  </footer>
+  <div class="footer__bar">
+    Copyright © 2024 All rights reserved.
+  </div>
+  <script>
+    function showJoinForm() {
+      document.getElementById("joinForm").style.display = "block";
+    }
+  </script>
+</body>
+</html>
